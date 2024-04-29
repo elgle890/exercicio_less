@@ -1,0 +1,59 @@
+@import "var.less";
+
+@breakpointMobile: ˜"(max-width: 767px)";
+@breakpointTablet: ˜"(max-width: 1023px)";
+
+body {
+    color: @corDosTextos;
+}
+
+.menuSettings {
+    padding-left: 20cm;
+    max-width: 4cm;
+    width: 100%;
+}
+
+header {
+    background-color: @corDeFundo;
+    header .container {
+        display: flex;
+    
+        .menu{
+            .menuSettings();
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+    }    
+
+}
+
+
+section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+    li {
+        text-align: center;
+    }
+}
+
+
+
+.container h2 {
+    text-align: center;
+}
+
+@media @breakpointTablet {
+    max-width: 80%;
+    
+}
+
+@media @breakpointMobile {
+    max-width: 70%;
+    
+}
+
